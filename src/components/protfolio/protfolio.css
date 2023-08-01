@@ -1,0 +1,140 @@
+/* #################################### Slider ############################################ */
+
+.slider_container {
+    background: var(--color-bg);
+    position: relative;
+    left: 10%;
+    height: 42rem;
+    width: 80%;
+    display: flex;
+    align-items: center;
+}
+
+.slider {
+    width: 100%;
+    height: 100%;
+    white-space: nowrap;
+    overflow-x: scroll;
+    scroll-behavior: smooth;
+}
+
+.pointer_left,
+.pointer_right {
+    position: absolute;
+    background: var(--color-light);
+    color: var(--color-bg);
+    border-radius: 50%;
+    width: 2.5rem;
+    height: 2.5rem;
+    top: 30%;
+    transform: translateY(-50%);
+    font-size: 1.8rem;
+    cursor: pointer;
+    transition: var(--transition);
+}
+
+.pointer_left:hover,
+.pointer_right:hover {
+
+    background: var(--color-primary);
+    color: var(--color-white);
+}
+
+.pointer_right {
+    right: -3rem;
+}
+
+.pointer_left {
+    left: -3rem;
+}
+
+/* #################################### Card ############################################ */
+
+.project_card {
+    position: relative;
+    width: 20rem;
+    height: 26rem;
+    margin: 0 1rem;
+    display: inline-table;
+    background: var(--color-light);
+    border-radius: 2rem;
+    white-space: normal;
+    /* box-shadow: 0 3rem 5rem rbga(255, 250, 250, 0.0); */
+    transition: var(--transition);
+}
+
+.project_card:hover {
+    height: 40rem;
+
+}
+
+.project_img {
+    position: absolute;
+    width: 16rem;
+    height: 16rem;
+    background: var(--color-light);
+    left: 50%;
+    transform: translateX(-50%);
+    top: 1.5rem;
+    border-radius: 1.5rem;
+    box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    transition: var(--transition);
+}
+
+.project_card:hover .project_img {
+    width: 17rem;
+    height: 17rem;
+    top: 1.5rem;
+}
+
+.project_img img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.project_card .project_content {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    overflow: hidden;
+}
+
+.project_card .project_content .project_detials {
+    padding: 1.5rem;
+    text-align: justify;
+    color: var(--color-bg);
+    transition: var(--transition);
+    transform: translateY(12.8rem);
+}
+
+.project_card:hover .project_content .project_detials {
+    transform: translateY(0);
+}
+
+.project_card .project_content .project_detials h2 {
+    text-align: center;
+    font-weight: 600;
+    line-height: 1.7rem;
+}
+
+.project_card .project_content .project_detials h4 {
+    padding: 0.4rem;
+}
+
+.project_card .project_content .project_detials h5 {
+    margin-bottom: 1rem;
+    color: black;
+}
+
+.project_card .project_content .project_detials .project_buttons {
+    display: flex;
+    justify-content: space-between;
+}

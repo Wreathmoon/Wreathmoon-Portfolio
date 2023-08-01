@@ -1,0 +1,99 @@
+nav {
+    /* background: rgba(39, 40, 41, 0.5); */
+    background: rgb(39, 40, 41);
+    opacity: 0.9;
+    display: flex;
+    flex-direction: column;
+    width: max-content;
+    padding: 1.2rem 0.9rem;
+    z-index: 2;
+    position: fixed;
+    left: 0%;
+    top: 50%;
+    transform: translateY(-50%);
+    gap: 1.5rem;
+    border-radius: 3rem;
+    backdrop-filter: blur(5px);
+}
+
+nav a {
+    background: transparent;
+    padding: 0.6rem 1rem;
+    border-radius: 2rem;
+    display: flex;
+    gap: 1rem;
+    color: var(--color-primary);
+    font-size: 1.5rem;
+}
+
+nav .nav_icon {
+    transform: translateY(0.2rem);
+}
+
+nav a:hover {
+    background: rgba(134, 144, 151, 0.5);
+    color: var(--color-white);
+}
+
+nav a.active {
+    background: rgba(134, 144, 151, 0.5);
+    color: rgb(39, 40, 41);
+}
+
+nav .toggle {
+    position: absolute;
+    /* background: rgba(39, 40, 41, 0.5); */
+    background: rgba(39, 40, 41, 0.9);
+    padding: 1.7rem;
+    width: 1.2rem;
+    height: 1.2rem;
+    border-radius: 2rem;
+    cursor: pointer;
+    right: -1.6rem;
+    top: 50%;
+    transform: translateY(-50%);
+
+}
+
+nav .pointer {
+    position: absolute;
+    width: 50%;
+    height: 50%;
+    right: 0.8rem;
+    top: 0.9rem;
+}
+
+nav .pointer.right {
+    right: 0.7rem;
+}
+
+nav .about_text_left {
+    display: none;
+}
+
+nav .about_text_right {
+    display: flex;
+}
+
+/* ============================= Media Screen (phone) ============================ */
+
+@media screen and (max-width: 600px) {
+    nav {
+        flex-direction: row;
+        left: 50%;
+        transform: translateX(-50%);
+        top: 88%;
+    }
+
+    nav .about_text_right {
+        display: none;
+    }
+
+    nav .pointer {
+        display: none;
+    }
+
+    nav .toggle {
+        display: none;
+    }
+}
