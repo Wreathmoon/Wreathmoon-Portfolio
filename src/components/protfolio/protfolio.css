@@ -56,7 +56,7 @@
     height: 26rem;
     margin: 0 1rem;
     display: inline-table;
-    background: var(--color-light);
+    background: var(--color-bg-variant);
     border-radius: 2rem;
     white-space: normal;
     /* box-shadow: 0 3rem 5rem rbga(255, 250, 250, 0.0); */
@@ -72,7 +72,7 @@
     position: absolute;
     width: 16rem;
     height: 16rem;
-    background: var(--color-light);
+    background: var(--color-bg-variant);
     left: 50%;
     transform: translateX(-50%);
     top: 1.5rem;

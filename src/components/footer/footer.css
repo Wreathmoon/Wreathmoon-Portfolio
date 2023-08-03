@@ -1,0 +1,43 @@
+footer {
+    background: var(--color-bg-variant);
+    padding: 1rem 0;
+    text-align: center;
+}
+
+footer a {
+    color: var(--color-bg);
+}
+
+.footer_socials {
+    font-size: 2rem;
+    display: flex;
+    justify-content: center;
+    gap: 3.5rem;
+    transition: var(--transition);
+}
+
+.footer_menu {
+    display: flex;
+    justify-content: center;
+    /* flex-wrap: wrap; */
+    gap: 2rem;
+    margin-bottom: 1rem;
+    transition: var(--transition);
+}
+
+/* ============================= Media Screen (phone) ============================ */
+
+@media screen and (max-width: 600px) {
+    .footer_menu {
+        flex-direction: column;
+        gap: 1.5rem;
+    }
+
+    .footer_menu {
+        margin-top: 1rem;
+    }
+
+    .copyright {
+        margin-bottom: 9rem;
+    }
+}

@@ -38,7 +38,7 @@ function Nav() {
             </a>
             <a href='#protfolio' id='#protfolio' onClick={() => setActiveButton('#protfolio')} className={activeButton === '#protfolio' ? 'active' : ' '}>
                 <span><GoProject className='nav_icon' /></span>
-                <span className={ptDir === 'left' ? 'about_text_left' : 'about_text_right'}>Project</span>
+                <span className={ptDir === 'left' ? 'about_text_left' : 'about_text_right'}>Protfolio</span>
             </a>
             <a href='#contact' id='#contact' onClick={() => setActiveButton('#contact')} className={activeButton === '#contact' ? 'active' : ' '}>
                 <span><BsFillChatDotsFill className='nav_icon' /></span>
