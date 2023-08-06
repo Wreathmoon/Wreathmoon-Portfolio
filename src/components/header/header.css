@@ -1,54 +1,16 @@
-header {
-    height: 100vh;
-    padding-top: 7rem;
-    overflow: hidden;
+.header{
+    height: 10vh;
 }
 
-.header_container {
-    text-align: center;
+.header_container{
     height: 100%;
-    position: relative;
-}
-
-.header_cvbutton {
-    margin-top: 2.5rem;
-    display: flex;
-    gap: 1.5rem;
-    justify-content: center;
 }
 
 .header_socialbutton {
     display: flex;
     align-items: center;
-    gap: 0.8rem;
+    gap: 1rem;
     position: absolute;
     left: 80%;
-    bottom: 3rem;
-}
-
-.header_socialbutton::before {
-    content: "";
-    width: 2px;
-    height: 3rem;
-    background: var(--color-primary);
-}
-
-/* ============================= Media Screen ============================ */
-
-@media screen and (max-width: 1024px) {
-    header {
-        height: 100vh;
-    }
-}
-
-/* ============================= Media Screen (phone) ============================ */
-
-@media screen and (max-width: 600px) {
-    header {
-        height: 100vh;
-    }
-
-    .header_socialbutton {
-        display: none;
-    }
+    top: 0rem;
 }

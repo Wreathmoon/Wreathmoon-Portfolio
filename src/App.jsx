@@ -1,5 +1,6 @@
 import React from 'react'
 import Header from "./components/header/Header"
+import Home from './components/home/Home'
 import About from "./components/about/About"
 import Nav from "./components/nav/Nav"
 import Protfolio from "./components/protfolio/Protfolio"
@@ -12,6 +13,7 @@ const App = () => {
     return (
         <div>
             <Header />
+            <Home />
             <Nav />
             <About />
             <Protfolio />

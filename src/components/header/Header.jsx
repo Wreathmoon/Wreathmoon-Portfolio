@@ -1,21 +1,29 @@
-import React from 'react'
-import CVButton from "./CVButton"
+import React, { useRef } from 'react'
 import SocialButton from "./SocialButton"
 import DarkModeButton from "./DarkModeButton"
+import { LiaTimesSolid } from "react-icons/lia"
+import { LiaBarsSolid } from "react-icons/lia"
+
 import "./header.css"
 
 function Header() {
+    const navRef = useRef();
+
+    function showBar(){
+        navRef.current.classList.toggle("responsive_navbar");
+    }
+
     return (
-        <header>
-            <section className="container header_container">
-                <DarkModeButton />
-                <h5>Hello I'm</h5>
-                <h1>Wreathmoon</h1>
-                <h5 className='text-light'>Web Developer</h5>
-                <CVButton />
-                <SocialButton />
-            </section>
-        </header>
+        <section className='header'>
+            <header className='container header_container'>  
+                <div>
+                    <DarkModeButton />
+                    <SocialButton />
+                    <LiaTimesSolid onClick={showBar}/>
+                </div>
+                <LiaBarsSolid onClick={showBar}/>
+            </header>
+        </section>
     )
 }
 

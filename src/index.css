@@ -28,6 +28,7 @@
     --color-bg-variant: #b8d5e1;
     --color-primary: #3F72AF;
     --color-white: #112D4E;
+    transition: 400ms ease-in-out;
 }
 
 html {
@@ -63,7 +64,6 @@ h1 {
 }
 
 section {
-    margin-top: 8rem;
     height: 100vh;
 }
 

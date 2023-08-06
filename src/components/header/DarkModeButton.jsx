@@ -1,18 +1,19 @@
 import React, { useState } from 'react'
 
-
+import DarkModeToggle from "react-dark-mode-toggle";
 
 function DarkModeButton(){
-    const [theme, setTheme] = useState("dark");
-    document.querySelector('body').setAttribute("data-theme", theme);
+    const [isDarkMode, setIsDarkMode] = useState(true);
+
+    document.querySelector('body').setAttribute("data-theme", isDarkMode===true?'dark':'light');
 
     function switchTheme(){
-        theme === "dark" ? setTheme("light") : setTheme("dark");
-        document.querySelector('body').setAttribute("data-theme", theme);
+        isDarkMode === true ? setIsDarkMode(false) : setIsDarkMode(true);
+        document.querySelector('body').setAttribute("data-theme", isDarkMode===true?'dark':'light');
     }
 
     return (
-        <button onClick={switchTheme} id="theme-button" className='btn btn-variant'>Change Theme</button>
+        <DarkModeToggle checked={isDarkMode} onChange={setIsDarkMode} size={80} speed={2} />
   )
 }
 
