@@ -1,3 +1,7 @@
+section{
+    height:80vh;
+}
+
 .contact_container {
     width: 60%;
     display: grid;
@@ -48,8 +52,6 @@ form button {
     margin-left: auto;
 }
 
-
-
 input,
 textarea {
     width: 100%;
@@ -58,7 +60,7 @@ textarea {
     background: transparent;
     border: 2px solid var(--color-primary);
     resize: none;
-    color: var(--color-light);
+    color: var(--color-white);
 }
 
 
@@ -67,11 +69,27 @@ textarea {
 /* ============================= Media Screen ============================ */
 
 @media screen and (max-width: 1024px) {
+
+    section{
+        height:100vh
+    }
     .contact_container {
         grid-template-columns: 1fr;
         width: --container-width-md;
         gap: 2rem;
     }
+
+    .contact_methods{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    input,
+    textarea {
+    padding: 1rem;
+
+}
 }
 
 
@@ -82,5 +100,9 @@ textarea {
     .contact_container {
         grid-template-columns: 1fr;
         width: var(--container-width-sm);
+    }
+
+    textarea{
+        
     }
 }

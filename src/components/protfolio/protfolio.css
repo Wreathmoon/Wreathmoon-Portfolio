@@ -21,7 +21,7 @@
 .pointer_left,
 .pointer_right {
     position: absolute;
-    background: var(--color-light);
+    background: var(--color-white);
     color: var(--color-bg);
     border-radius: 50%;
     width: 2.5rem;
@@ -110,7 +110,7 @@
 .project_card .project_content .project_detials {
     padding: 1.5rem;
     text-align: justify;
-    color: var(--color-bg);
+    color: var(--color-white);
     transition: var(--transition);
     transform: translateY(12.8rem);
 }
@@ -131,10 +131,37 @@
 
 .project_card .project_content .project_detials h5 {
     margin-bottom: 1rem;
-    color: black;
+    color: var(--color-white);
 }
 
 .project_card .project_content .project_detials .project_buttons {
     display: flex;
     justify-content: space-between;
+}
+
+/* ============================= Media Screen ============================ */
+
+@media screen and (max-width: 1024px) {
+    .slider_container{
+        width: 100%;
+        left: 0%;
+    }
+    .pointer_right {
+        right:-1.5rem;
+    }
+    
+    .pointer_left {
+        left: -1.5rem;
+    }
+}
+
+/* ============================= Media Screen (phone) ============================ */
+
+@media screen and (max-width: 600px) {
+    .pointer_right{
+        display: none;
+    }
+    .pointer_left{
+        display: none;
+    }
 }
