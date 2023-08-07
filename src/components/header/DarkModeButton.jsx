@@ -13,7 +13,7 @@ function DarkModeButton(){
     };
 
     return (
-        <DarkModeToggle isDarkMode={isDarkMode} onChange={toggleDarkMode} size={80} speed={2} />
+        <DarkModeToggle isDarkMode={isDarkMode} onChange={toggleDarkMode} size={60} speed={2} />
   )
 }
 

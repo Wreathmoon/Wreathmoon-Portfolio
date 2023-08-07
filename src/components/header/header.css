@@ -1,16 +1,23 @@
 .header{
     height: 10vh;
-}
-
-.header_container{
-    height: 100%;
-}
-
-.header_socialbutton {
+    width: 100%;
     display: flex;
     align-items: center;
-    gap: 1rem;
-    position: absolute;
-    left: 80%;
-    top: 0rem;
+    justify-content: space-between;
+}
+.header_logo{
+    margin-left: 3rem;
+    font-size: 2rem;
+}
+
+.header_bar{
+    width: 20rem;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;    
+}
+
+.social_button {
+    font-size: 2rem;
+    margin-top: 0.5rem;
 }
