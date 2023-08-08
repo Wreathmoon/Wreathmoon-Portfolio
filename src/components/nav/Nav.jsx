@@ -21,29 +21,31 @@ function Nav() {
 
     function GetPtIcon(props) {
         return (
-            props === 'left' ? <AiOutlineRight className='pointer right' />
-                : <AiOutlineLeft className='pointer left' />
+            props === 'left' ? <AiOutlineRight className='right' />
+                : <AiOutlineLeft className='left' />
         )
     }
 
     return (
-        <nav>
-            <a href='#' id='#' onClick={() => setActiveButton('#')} className={activeButton === '#' ? 'active' : ' '}>
-                <span><BiHome className='nav_icon' /></span>
-                <span className={ptDir === 'left' ? 'about_text_left' : 'about_text_right'} >Home</span>
-            </a>
-            <a href='#about' id='#about' onClick={() => setActiveButton('#about')} className={activeButton === '#about' ? 'active' : ' '}>
-                <span><BiUser className='nav_icon' /></span>
-                <span className={ptDir === 'left' ? 'about_text_left' : 'about_text_right'}>About</span>
-            </a>
-            <a href='#protfolio' id='#protfolio' onClick={() => setActiveButton('#protfolio')} className={activeButton === '#protfolio' ? 'active' : ' '}>
-                <span><GoProject className='nav_icon' /></span>
-                <span className={ptDir === 'left' ? 'about_text_left' : 'about_text_right'}>Protfolio</span>
-            </a>
-            <a href='#contact' id='#contact' onClick={() => setActiveButton('#contact')} className={activeButton === '#contact' ? 'active' : ' '}>
-                <span><BsFillChatDotsFill className='nav_icon' /></span>
-                <span className={ptDir === 'left' ? 'about_text_left' : 'about_text_right'}>Contact</span>
-            </a>
+        <nav className={ptDir === 'left' ? 'about_text_left' : 'about_text_right'}>
+            <div className='content'>
+                <a href='#' id='#' onClick={() => setActiveButton('#')} className={activeButton === '#' ? 'active' : ' '}>
+                    <span><BiHome className='nav_icon' /></span>
+                    <span className='text'>Home</span>
+                </a>
+                <a href='#about' id='#about' onClick={() => setActiveButton('#about')} className={activeButton === '#about' ? 'active' : ' '}>
+                    <span><BiUser className='nav_icon' /></span>
+                    <span className='text'>About</span>
+                </a>
+                <a href='#protfolio' id='#protfolio' onClick={() => setActiveButton('#protfolio')} className={activeButton === '#protfolio' ? 'active' : ' '}>
+                    <span><GoProject className='nav_icon' /></span>
+                    <span className='text'>Protfolio</span>
+                </a>
+                <a href='#contact' id='#contact' onClick={() => setActiveButton('#contact')} className={activeButton === '#contact' ? 'active' : ' '}>
+                    <span><BsFillChatDotsFill className='nav_icon' /></span>
+                    <span className='text'>Contact</span>
+                </a>
+            </div>
             <div onClick={HandleClick} className='toggle'>{GetPtIcon(ptDir)}</div>
         </nav >
     )

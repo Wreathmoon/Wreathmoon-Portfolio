@@ -1,5 +1,4 @@
 import React, { useState } from 'react'
-import "./header.css"
 import { DarkModeToggle } from "react-dark-mode-toggle-2";
 
 function DarkModeButton(){
@@ -12,9 +11,17 @@ function DarkModeButton(){
         document.querySelector('body').setAttribute("data-theme", isDarkMode===true?'dark':'light');
     };
 
-    return (
-        <DarkModeToggle className='modeToggle' isDarkMode={isDarkMode} onChange={toggleDarkMode}  speed={2} />
-  )
+    let windowSize = window.matchMedia("(max-width: 1024px)");
+    if (windowSize.matches){
+        return (
+            <DarkModeToggle isDarkMode={isDarkMode} size={40} onChange={toggleDarkMode}  speed={2} />
+        )
+    }
+    else {
+        return (
+        <DarkModeToggle isDarkMode={isDarkMode} size={50} onChange={toggleDarkMode}  speed={2} />
+        )
+    }
 }
 
 export default DarkModeButton
