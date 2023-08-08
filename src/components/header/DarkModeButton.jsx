@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-
+import "./header.css"
 import { DarkModeToggle } from "react-dark-mode-toggle-2";
 
 function DarkModeButton(){
@@ -13,7 +13,7 @@ function DarkModeButton(){
     };
 
     return (
-        <DarkModeToggle isDarkMode={isDarkMode} onChange={toggleDarkMode} size={60} speed={2} />
+        <DarkModeToggle className='modeToggle' isDarkMode={isDarkMode} onChange={toggleDarkMode}  speed={2} />
   )
 }
 

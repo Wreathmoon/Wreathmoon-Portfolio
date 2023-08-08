@@ -1,7 +1,7 @@
 .about_container {
     display: grid;
-    grid-template-columns: 35% 50%;
-    gap: 15%;
+    grid-template-columns: 35% 60%;
+    justify-content: space-between;
 }
 
 .about_me {
@@ -102,7 +102,7 @@
 
 @media screen and (max-width: 600px) {
     .about_me {
-        width: 40%;
+        width: 35%;
         margin: 1rem auto 0;
     }
 

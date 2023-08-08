@@ -11,7 +11,7 @@
 }
 
 .header_bar{
-    width: 20rem;
+    width: 30%;
     display: flex;
     justify-content: space-evenly;
     align-items: center;    
@@ -20,4 +20,36 @@
 .social_button {
     font-size: 2rem;
     margin-top: 0.5rem;
+}
+
+.modeToggle{
+    size: 4rem;
+}
+
+
+/* ============================= Media Screen ============================ */
+
+@media screen and (max-width: 1024px) {
+    .header_bar{
+        width: 40%;  
+    }
+    .header_bar{
+        font-size: 1.5rem;
+    }
+    .social_button{
+        font-size: 1.5rem;
+    }
+}
+
+/* ============================= Media Screen (phone) ============================ */
+
+@media screen and (max-width: 600px) {
+    .header_logo {
+        margin-left: 1rem;
+    }
+
+    .header_bar{
+        width: 15rem;
+    }
+
 }

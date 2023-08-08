@@ -1,11 +1,12 @@
 /* #################################### Slider ############################################ */
 
 .slider_container {
-    background: var(--color-bg);
+    background: var(--color-bg-variant);
     position: relative;
-    left: 10%;
-    height: 42rem;
-    width: 80%;
+    /* left: 10%;
+    right: 10%; */
+    height: 100%;
+    /* width: 80%; */
     display: flex;
     align-items: center;
 }
@@ -143,8 +144,8 @@
 
 @media screen and (max-width: 1024px) {
     .slider_container{
-        width: 100%;
-        left: 0%;
+        /* width: 100%; */
+        /* left: 0%; */
     }
     .pointer_right {
         right:-1.5rem;

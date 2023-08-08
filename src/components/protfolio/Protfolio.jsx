@@ -20,7 +20,7 @@ function Protfolio() {
 
     return (
         <section id='protfolio'>
-            <div className='slider_container'>
+            <div className='container slider_container'>
                 <div className='slider' id='slider'>
                     {
                         Projects.map((project) => {
