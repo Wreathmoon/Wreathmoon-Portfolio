@@ -2,13 +2,16 @@ import React from 'react'
 import "./about.css"
 import ImageMe from '../../assets/me.jpg'
 import { LiaUniversitySolid } from 'react-icons/lia'
+import { FaReact } from 'react-icons/fa'
+import { BiLike } from 'react-icons/bi'
 
 function AboutCards(props) {
     return (
         <article className='about_card'>
             {props.icon}
-            <h5>{props.title}</h5>
-            <small>{props.content}</small>
+            <h4>{props.title}</h4>
+            <h5>{props.contenta}</h5>
+            <h5>{props.contentb}</h5>
         </article>
     );
 }
@@ -30,9 +33,12 @@ function About() {
 
                 <div className='about_content'>
                     <div className='about_cards'>
-                        <AboutCards icon={<LiaUniversitySolid className='about_icons' />} title='Education' content='Bsc in UESTC' />
-                        <AboutCards icon={<LiaUniversitySolid className='about_icons' />} title='Education' content='Bsc in UESTC' />
-                        <AboutCards icon={<LiaUniversitySolid className='about_icons' />} title='Education' content='Bsc in UESTC' />
+                        <AboutCards icon={<LiaUniversitySolid className='about_icons' />} 
+                        title='Education' contenta='MSc in Imeperial College' contentb='BEng in University of Glasgow'/>
+                        <AboutCards icon={<FaReact className='about_icons' />} 
+                        title='Skills' contenta='React Web Development' contentb='Data Science & Machine Learning '/>
+                        <AboutCards icon={<BiLike className='about_icons' />} 
+                        title='Hobbies' contentb='Hot Pot & Pizza Forever' contenta='Video Editting'/>
                     </div>
 
                     <p>

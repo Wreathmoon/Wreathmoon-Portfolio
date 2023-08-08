@@ -13,8 +13,8 @@ function ProjectCard(props) {
                     <h4>{props.tags}</h4>
                     <h5>{props.content}</h5>
                     <div className='project_buttons'>
-                        <a href='https://github.com/Wreathmoon?tab=repositories' className='btn' target='_blank'>Demo</a>
-                        <a href='https://github.com/Wreathmoon?tab=repositories' className='btn btn-variant' target='_blank'>Code</a>
+                        <a href={props.demo} className='btn' target='_blank'>Demo</a>
+                        <a href={props.code} className='btn btn-variant' target='_blank'>Code</a>
                     </div>
                 </div>
             </div>

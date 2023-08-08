@@ -13,25 +13,37 @@
     transform: translateY(25%);
 }
 
-.home_cvbutton {
+.homeCvButtons {
     margin-top: 2.5rem;
     display: flex;
     gap: 1.5rem;
     justify-content: center;
 }
 
+.homeCvButtons a{
+    display: flex;
+    justify-content: space-between;
+    gap: 0.5rem;
+    padding: 0.75rem 1.2rem 0.5rem 1.2rem;
+}
+
+.text{
+    margin-top: 0.3rem;
+}
+
+.icon{
+    margin-top: 0.1rem;
+    font-size: 1.5rem;
+}
+
+
 /* ============================= Media Screen ============================ */
 
 @media screen and (max-width: 1024px) {
-    header {
-        /* height: 100vh; */
-    }
+
 }
 
 /* ============================= Media Screen (phone) ============================ */
 
 @media screen and (max-width: 600px) {
-    header {
-        /* height: 100vh; */
-    }
 }

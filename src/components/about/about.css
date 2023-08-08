@@ -35,7 +35,7 @@
 
 .about_card {
     background: var(--color-bg-variant);
-    padding: 1.5rem;
+    padding: 1.2rem 0.5rem;
     border-radius: 1rem;
     text-align: center;
     border: 1px solid transparent;
@@ -52,12 +52,12 @@
     font-size: 2rem;
 }
 
-.about_card h5 {
+.about_card h4 {
     font-size: 1.1rem;
 }
 
-.about_card small {
-    font-size: 0.8rem;
+.about_card h5 {
+    font-size: 0.7rem;
     color: var(--color-white);
 }
 
@@ -81,7 +81,7 @@
     }
 
     .about_card{
-        padding: 0%;
+        padding: 0.5rem;
     }
 
     .about_content {
@@ -93,7 +93,7 @@
     }
 
     .about_content p {
-        margin: 2rem 0 1.5rem;
+        margin: 1rem 0 1.5rem;
     }
 
 }
@@ -103,7 +103,7 @@
 @media screen and (max-width: 600px) {
     .about_me {
         width: 35%;
-        margin: 1rem auto 0;
+        margin: 0 auto 0;
     }
 
     .about_content {

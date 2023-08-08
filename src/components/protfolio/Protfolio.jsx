@@ -24,7 +24,10 @@ function Protfolio() {
                 <div className='slider' id='slider'>
                     {
                         Projects.map((project) => {
-                            return <ProjectCard key={project.id} img={project.img} title={project.title} tags={project.tags} content={project.content} />
+                            return <ProjectCard key={project.id} img={project.img} 
+                                    title={project.title} tags={project.tags} 
+                                    content={project.content} demo={project.demo}
+                                    code={project.code}/>
                         })
                     }
                 </div>
