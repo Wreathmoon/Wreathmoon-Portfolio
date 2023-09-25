@@ -19,7 +19,7 @@ const Projects = [
         img: ProtfolioImg,
         title: 'Personal Portfolio Development',
         tags: 'React, Amazon Web Services, Amplify',
-        content: 'Website development using React with custom component of interactive navbar, project cards, dark/light mode, language selection etc. And this project was deploied by Amplify of Amazon Web Services with CI/CO workflow.',
+        content: 'Website development using React with custom components of interactive navbar, project cards, dark/light mode switcher etc. And this project was deploied by Amplify of Amazon Web Services with CI/CO workflow.',
         demo: 'https://www.wreathmoon.com',
         code: 'https://github.com/Wreathmoon/WreathmoonPortfolio'
     },
