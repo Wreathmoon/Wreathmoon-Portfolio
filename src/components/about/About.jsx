@@ -33,19 +33,27 @@ function About() {
 
                 <div className='about_content'>
                     <div className='about_cards'>
-                        <AboutCards icon={<LiaUniversitySolid className='about_icons' />} 
-                        title='Education' contenta='MSc in Imeperial College' contentb='BEng in University of Glasgow'/>
-                        <AboutCards icon={<FaReact className='about_icons' />} 
-                        title='Skills' contenta='React Web Development' contentb='Data Science & Machine Learning '/>
-                        <AboutCards icon={<BiLike className='about_icons' />} 
-                        title='Hobbies' contentb='Hot Pot & Pizza Forever' contenta='Video Editting'/>
+                        <AboutCards icon={<LiaUniversitySolid className='about_icons' />}
+                            title='Education' contenta='MSc in Imeperial College' contentb='BEng in University of Glasgow' />
+                        <AboutCards icon={<FaReact className='about_icons' />}
+                            title='Skills' contenta='React Web Development' contentb='Data Science & Machine Learning ' />
+                        <AboutCards icon={<BiLike className='about_icons' />}
+                            title='Hobbies' contenta='Video Editting' contentb='Hot Pot & Coffee Forever' />
                     </div>
 
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-                    </p>
+                    <div className='about_discribe'>
+                        <p>
+                            Hello everyone, I am Xu Luohao, a front-end developer who knows something about machine learning.
+                            And I love using code to make fun, cool-looking, interactive things.
+                        </p>
+                        <p>
+                            Currently, I just graduated from Imperial College and am looking for a job in SDE or Data Science graduate programs in London.
+                        </p>
+                        <p>
+                            Before that, I studied electrical and electronic engineering at the University of Glasgow, machine learning and data science at Imperial College,
+                            and taught myself a variety of skills including video editing, mountain biking, and computer assembly.
+                        </p>
+                    </div>
 
                     <a href='#contact' className='btn btn-variant'>Let's Talk</a>
 

@@ -61,10 +61,16 @@
     color: var(--color-white);
 }
 
-.about_content p {
+.about_discribe {
     margin: 2rem 0 3rem 0;
     color: var(--color-white);
     text-align: justify;
+    display: block;
+}
+
+.about_discribe p {
+    margin-block-start: 0.5em;
+    margin-block-end: 0.5em;
 }
 
 /* ============================= Media Screen ============================ */
@@ -72,7 +78,7 @@
 @media screen and (max-width: 1024px) {
     .about_container {
         grid-template-columns: 1fr;
-        gap:2rem;
+        gap: 2rem;
     }
 
     .about_me {
@@ -80,7 +86,7 @@
         margin: 0 auto 0;
     }
 
-    .about_card{
+    .about_card {
         padding: 0.5rem;
     }
 
@@ -88,7 +94,7 @@
         text-align: end;
     }
 
-    .about_icons{
+    .about_icons {
         font-size: 1.5rem;
     }
 
