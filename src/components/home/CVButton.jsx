@@ -1,5 +1,5 @@
 import React from 'react'
-import CV from '../../assets/CV_Luohao Xu_202309.pdf'
+import CV from '../../assets/CV_LuohaoXu_202310.pdf'
 import { BiDownload } from "react-icons/bi"
 import { BsFillChatDotsFill } from "react-icons/bs"
 
