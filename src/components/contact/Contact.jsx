@@ -44,7 +44,7 @@ function Contact() {
                 <form ref={form} onSubmit={sendEmail}>
                     <input type='text' name='name' placeholder='Your Name' required />
                     <input type='email' name='email' placeholder='Your Email' required />
-                    <textarea name='message' rows='7' placeholder='Your Messgae' required />
+                    <textarea name='message' rows='7' placeholder='Your Message' required />
                     <button type='submit' className='btn btn-variant'>Send</button>
                 </form>
             </div>
